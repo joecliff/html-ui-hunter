@@ -12,5 +12,5 @@ server.start(path.resolve('./public'), 3000, true);
 ### Installation
 
 ```bash
-$ npm install express
+$ npm install html-ui-hunter
 ```
