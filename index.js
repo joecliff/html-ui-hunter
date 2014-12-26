@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var metaHolder = require('./lib/core/metaHolder.js');
 
 exports.start = function (modulePath, port, devMode) {
