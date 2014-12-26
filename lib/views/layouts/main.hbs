@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UI片段收集</title>
+
+    <link rel="stylesheet" href="/bower_inner/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet/less" type="text/css" href="/less/style.less"/>
+    <script src="/bower_inner/less.js/dist/less-1.6.2.min.js"></script>
+
+    <script src="/bower_inner/jquery/jquery.min.js"></script>
+    <script src="/bower_inner/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>-->
+    <link rel="stylesheet" href="/highlight/default.min.css">
+    <script src="/highlight/highlight.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarCtrl">
+    <div class="container-fluid st-header-wrapper">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">UI片段收集</a>
+        </div>
+        <div class="row">
+            <form class="st-search-form  col-md-4 col-sm-4 " role="search" _lpchecked="1">
+                <input type="text" ng-model="asyncSelected" placeholder="搜索"
+                       typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations"
+                       class="form-control">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+    {{{ body}}}
+</div>
+
+</body>
+</html>

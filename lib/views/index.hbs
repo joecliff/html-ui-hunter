@@ -1,0 +1,19 @@
+<div class="container i-collections">
+    <h1 class="text-center">集合列表</h1>
+    <table class="table table-hover">
+        <tr>
+            <th style="width: 30%">名称</th>
+            <th style="width: 65%">路径</th>
+        </tr>
+        {{#components}}
+            <tr>
+                <td>
+                    <a href="{{relativePath}}">{{name}}</a>
+                </td>
+                <td>
+                    <a href="{{relativePath}}">{{relativePath}}</a>
+                </td>
+            </tr>
+        {{/components}}
+    </table>
+</div>

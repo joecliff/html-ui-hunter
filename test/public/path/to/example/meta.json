@@ -1,0 +1,8 @@
+{
+  "name":"一个测试模块",
+  "requireFiles":[
+    "/bower_components/bootstrap/dist/css/bootstrap.css",
+    "/bower_components/jquery/jquery.js",
+    "/bower_components/bootstrap/dist/js/bootstrap.min.js"
+  ]
+}

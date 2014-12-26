@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example App</title>
+
+</head>
+<body>
+<!-- styles start -->
+{{#lessFiles}}
+    <link rel="stylesheet/less" type="text/css" href="{{servePath}}"/>
+{{/lessFiles}}
+<script src="/bower_inner/less.js/dist/less-1.6.2.min.js"></script>
+<!-- styles end -->
+
+{{> body}}
+
+<!-- js start -->
+{{#jsFiles}}
+    <script src="{{servePath}}"></script>
+{{/jsFiles}}
+<!-- js end -->
+</body>
+</html>

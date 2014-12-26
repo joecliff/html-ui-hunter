@@ -1,0 +1,70 @@
+<div class="container-fluid i-module-detail">
+    <div class="row">
+        <h2 class="text-center">模块: {{meta.serveName}}</h2>
+
+        <div class="col-md-6 i-col1">
+            <section >
+                <!--html-->
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#{{mainTpl.name}}" aria-controls="{{mainTpl.name}}"
+                                                              role="tab"
+                                                              data-toggle="tab">{{mainTpl.name}}</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="{{mainTpl.name}}">
+                        <pre><code class="hbs">{{mainTpl.content}}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section >
+                <!--less-->
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    {{#lessFiles}}
+                        <li role="presentation" class="active"><a href="#{{name}}" aria-controls="{{name}}" role="tab"
+                                                                  data-toggle="tab">{{name}}</a></li>
+                    {{/lessFiles}}
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    {{#lessFiles}}
+                        <div role="tabpanel" class="tab-pane active" id="{{name}}">
+                            <pre><code class="less">{{content}}</code></pre>
+                        </div>
+                    {{/lessFiles}}
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 i-col2">
+            <section >
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    {{#jsFiles}}
+                        <li role="presentation" class="active"><a href="#{{name}}" aria-controls="{{name}}" role="tab"
+                                                                  data-toggle="tab">{{name}}</a></li>
+                    {{/jsFiles}}
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    {{#jsFiles}}
+                        <div role="tabpanel" class="tab-pane active" id="{{name}}">
+                            <pre><code class="js">{{content}}</code></pre>
+                        </div>
+                    {{/jsFiles}}
+                </div>
+            </section>
+            <section >
+                <iframe src="{{renderServePath}}" frameborder="0"></iframe>
+            </section>
+        </div>
+    </div>
+
+</div>
+<script src="/js/detail.js"></script>
