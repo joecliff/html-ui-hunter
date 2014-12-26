@@ -2,9 +2,6 @@
 
   A handy tool for collecting html ui fragments based on [node](http://nodejs.org).
 
-  [![NPM Version][npm-image]][npm-url]
-  [![NPM Downloads][downloads-image]][downloads-url]
-
 ```js
 var server = require('html-ui-hunter');
 var path = require('path');
