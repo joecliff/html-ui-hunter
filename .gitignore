@@ -2,3 +2,4 @@
 public/bower_components
 lib/resource/bower_inner
 test/public/bower_components
+node_modules
